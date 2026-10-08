@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My To-Do List</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="todo-container">
+
+        <header class="todo-header">
+            <p class="tag">MY PRODUCTIVITY</p>
+            <h1>My <span>To-Do List</span></h1>
+            <p class="subtitle">
+                Organize your tasks and stay productive.
+            </p>
+        </header>
+
+
+        <!-- Add Task Section -->
+        <div class="task-input">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter your task..."
+                autocomplete="off"
+            >
+
+            <button id="addTaskBtn">
+                Add Task
+            </button>
+
+        </div>
+
+        <!-- Task Statistics -->
+        <div class="task-info">
+
+            <p>
+                <span id="taskCount">0</span> tasks remaining
+            </p>
+
+            <button id="clearCompleted">
+                Clear Completed
+            </button>
+
+        </div>
+
+
+        <!-- Task List -->
+        <ul id="taskList"></ul>
+
+
+        <!-- Empty Message -->
+        <div id="emptyMessage" class="empty-message">
+            <div class="empty-icon">✓</div>
+
+            <h3>No tasks yet</h3>
+
+            <p>
+                Add your first task and start being productive.
+            </p>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
